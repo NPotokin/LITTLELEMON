@@ -1,3 +1,5 @@
+
+
 import logo1 from '../assets/logo1.png'
 import Image from 'next/image'
 import { BsBasket } from "react-icons/bs";
@@ -19,9 +21,8 @@ export default function Navbar() {
           <nav className='w-full flex flex-col md:flex-row mx-auto my-auto py-4  '>
             <Link href="/" className="text-2xl md:text-3xl my-1  mx-auto text-prim1 font-extrabold hover:scale-105 hover:text-prim2 duration-500">Home</Link>
             <Link href="/about" className="text-2xl md:text-3xl my-1  mx-auto text-prim1 font-extrabold hover:scale-105 hover:text-prim2 duration-500">About</Link>
-            <a href="#menu" className="text-2xl md:text-3xl my-1  mx-auto text-prim1 font-extrabold hover:scale-105 hover:text-prim2 duration-500">Menu</a>
-            <a href="#booking" className="text-2xl md:text-3xl my-1  mx-auto text-prim1 font-extrabold hover:scale-105 hover:text-prim2 duration-500">Book a table</a>
-            <a href="#testimonials" className="text-2xl md:text-3xl my-1  mx-auto text-prim1 font-extrabold hover:scale-105 hover:text-prim2 duration-500">Reviews</a>
+            <Link href="/menu" className="text-2xl md:text-3xl my-1  mx-auto text-prim1 font-extrabold hover:scale-105 hover:text-prim2 duration-500">Menu</Link>
+            <Link href="/booking" className="text-2xl md:text-3xl my-1  mx-auto text-prim1 font-extrabold hover:scale-105 hover:text-prim2 duration-500">Book a table</Link>
             
           </nav>
         </div>
