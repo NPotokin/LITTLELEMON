@@ -6,8 +6,8 @@ export default function HomePage(){
 
 
   return(
-    <div id='specials'
-    className='bg-hl1 max-w-full flex flex-col '>
+    <div 
+    className='max-w-full flex flex-col '>
       <h1 
       className=" max-w-7xl mx-auto text-4xl md:text-5xl lg:text-6xl text-hl2 font-extrabold p-2 py-6 m-2 ">
         Updating menu items 
@@ -47,7 +47,7 @@ export default function HomePage(){
               <Link href="/menu"
               className='mx-auto w-30 p-3 mb-4 rounded-xl text-md font-semibold text-hl2
               bg-prim2 hover:text-prim1 hover:bg-sec1 hover:scale-110 duration-500'>
-                Let's grab a bite!</Link>
+                Grab a bite!</Link>
             
           </div>
             <img 
