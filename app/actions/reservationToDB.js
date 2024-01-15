@@ -26,6 +26,6 @@ export default async function reservationToDB(formData){
        
 
     } catch (error) {
-        return Response.json({ error: `An error ${error} occurred` });
+        return Response.json(error);
     }
 }
