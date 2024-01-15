@@ -19,7 +19,7 @@ export default async function reservationToDB(formData){
                 phone: phone,
                 email: email,
                 date: date,
-                people: people,
+                guests: people,
                 message: message
             },
         })

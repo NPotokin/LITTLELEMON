@@ -63,7 +63,8 @@ export default function Bookings(){
             </div>
 
             <div className="flex flex-col md:flex-row py-4 w-full px-4">
-                <label htmlFor="date" className='text-prim1 w-full md:w-1/3 flex text-center items-center justify-center p-1 m-1 mb-2 text-2xl'>Date:</label>
+                <label htmlFor="date" 
+                className='text-prim1 w-full md:w-1/3 flex text-center items-center justify-center p-1 m-1 mb-2 text-2xl'>Date:</label>
                 <input  onChange={e => setDate(e.target.value)} type="date" id="date" name="date" 
                 required 
                 className='placeholder-prim1/60 w-full md:w-2/3 flex p-2  text-prim1 text-center items-center justify-center border-4 border-prim1 rounded-xl focus:outline-none focus:border-prim2' />
