@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 export default function ThankYou(){
@@ -21,6 +22,12 @@ export default function ThankYou(){
             And get back to you in a    
             <span className='text-prim1'> timely fashion </span> 
             </h1>
+
+            <Link
+            href='/' 
+            className="mx-auto p-4 px-6 my-8 border-4 border-prim1 rounded-3xl font-semibold text-2xl text-prim1 hover:bg-prim2 duration-700" 
+             >Home
+            </Link>
         </div>
     )
 }
