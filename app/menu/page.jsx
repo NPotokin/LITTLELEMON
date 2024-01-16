@@ -2,10 +2,13 @@
 
 import { useState } from 'react'
 import menuData from '../utilities/menuData';
+import useMenuStore from '../store/store';
+
 
 export default function Menu() {
 
   const [menuItems, setMenuItems] = useState(menuData);
+  const {items, addMeal, removeMeal} = useMenuStore();
 
   const filterCategory = (category) => {
     setMenuItems (
@@ -79,8 +82,11 @@ export default function Menu() {
             </div>
               <div className='flex flex-row justify-between m-2 p-2 border-'>
                 <p className='ml-1 text-lg font-extrabold text-prim1'>{item.price}</p>
-                <button className='border-2 rounded-xl w-20 p-1 font-bold hover:bg-prim2 hover:scale-105 duration-500'
+                <button
+                onClick={() => addMeal(item)} 
+                className='border-2 rounded-xl w-20 p-1 font-bold hover:bg-prim2 hover:scale-105 duration-500'
                 >Add</button>
+              
 
               </div>
           </div>
